@@ -1,0 +1,21 @@
+.sidebar-nav-item {
+    @apply text-gray-700 flex items-center px-2 py-2 text-sm font-medium rounded-md;
+
+    .icon {
+        @apply text-gray-500 mr-3 h-6 w-6;
+    }
+
+    &:hover {
+        @apply text-gray-900 bg-gray-50;
+        .icon {
+            @apply text-gray-500;
+        }
+    }
+
+    &.nuxt-link-exact-active, &.open {
+        @apply text-gray-900 bg-gray-200;
+        .icon {
+            @apply text-gray-500;
+        }
+    }
+}
